@@ -1,17 +1,17 @@
 import {View, Text, StyleSheet, Alert} from 'react-native';
-import { Button } from '@/components/button';
-import { Input } from '@/components/input';
+import { Button } from './src/components/button';
+import { Input } from './src/components/input';
 import {useState } from 'react';
 import { router } from 'expo-router';
 
 export default function Index(){
     
-    const [name , setName] = useState<string>();
+    const [name , setName] = useState<string>("");
 
 
 
     function handleNext() {
-        router.navigate("/dashboard");
+        router.navigate("./dashboard");
     }
 
     return (
